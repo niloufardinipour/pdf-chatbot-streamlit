@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 from PyPDF2 import PdfReader
-from langchain.text_splitter import CharacterTextSplitters
+from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_openai import OpenAIEmbeddings, OpenAI
