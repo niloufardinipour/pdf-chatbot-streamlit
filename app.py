@@ -12,7 +12,7 @@ load_dotenv(".env")
 st.set_page_config(page_title="Ask your Technical Assistant")
 
 @st.cache_resource
-def load_knowledge_base(pdf_path="manual.pdf"):
+def load_knowledge_base(pdf_path="Manual.pdf"):
     pdf_reader = PdfReader(pdf_path)
     text = ""
     for page in pdf_reader.pages:
